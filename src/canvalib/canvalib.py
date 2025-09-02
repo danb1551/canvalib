@@ -9,7 +9,6 @@
 """
 
 import os
-import colorama
 from colorama import init, Fore, Back
 import sys
 from time import sleep, time

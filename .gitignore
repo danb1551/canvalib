@@ -1,2 +1,4 @@
-build
+dist
+canvalib.egg-info
 tests
+token
