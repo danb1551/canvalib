@@ -16,7 +16,7 @@ from time import sleep, time
 
 init(autoreset=True)
 
-sys.stdout.write("\033[?25l")  # skryje kurzor
+sys.stdout.write("\033[?25l")  # hide curzor
 sys.stdout.flush()
 
 class Canvas:
@@ -81,20 +81,20 @@ class Canvas:
 def _test():
     before = time()
     t = 0.5
-    c = Canvas(150, 50)
+    c = Canvas(50, 10)
     print("Height: ", c.height)
     print("Width: ", c.width, "\n")
     c.add_text(4,22,"I");c.render();sleep(t)
     c.add_text(4,23,"t");c.render();sleep(t)
     c.add_text(4,24,"'");c.render();sleep(t)
     c.add_text(4,25,"s");c.render();sleep(t)
-    c.add_text(5,15,"w");c.render();sleep(t)
-    c.add_text(5,16,"o");c.render();sleep(t)
-    c.add_text(5,17,"r");c.render();sleep(t)
-    c.add_text(5,18,"k");c.render();sleep(t)
-    c.add_text(5,19,"i");c.render();sleep(t)
-    c.add_text(5,20,"n");c.render();sleep(t)
-    c.add_text(5,21,"g");c.render();sleep(t)
+    c.add_text(5,20,"w");c.render();sleep(t)
+    c.add_text(5,21,"o");c.render();sleep(t)
+    c.add_text(5,22,"r");c.render();sleep(t)
+    c.add_text(5,23,"k");c.render();sleep(t)
+    c.add_text(5,24,"i");c.render();sleep(t)
+    c.add_text(5,25,"n");c.render();sleep(t)
+    c.add_text(5,26,"g");c.render();sleep(t)
     after = time()
     usage_of_sleep = 11
     exec_time = after - before - (t * usage_of_sleep)
@@ -109,13 +109,13 @@ def _test():
     c.add_text(4,23,"t");c.render()
     c.add_text(4,24,"'");c.render()
     c.add_text(4,25,"s");c.render()
-    c.add_text(5,15,"w");c.render()
-    c.add_text(5,16,"o");c.render()
-    c.add_text(5,17,"r");c.render()
-    c.add_text(5,18,"k");c.render()
-    c.add_text(5,19,"i");c.render()
-    c.add_text(5,20,"n");c.render()
-    c.add_text(5,21,"g");c.render()
+    c.add_text(5,20,"w");c.render()
+    c.add_text(5,21,"o");c.render()
+    c.add_text(5,22,"r");c.render()
+    c.add_text(5,23,"k");c.render()
+    c.add_text(5,24,"i");c.render()
+    c.add_text(5,25,"n");c.render()
+    c.add_text(5,26,"g");c.render()
     after = time()
     exec_time = after - before
     print(f"""Executing time including initialization of canvas of 50x10 size withou sleep() function (for better accurancy) is {exec_time}s.""")
