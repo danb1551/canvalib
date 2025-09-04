@@ -4,6 +4,8 @@
 
 Canvalib is library for window with diferent text and backround color in your terminal.
 
+<video src="show.mp4" autoplay>show video</video>
+
 ## Installation
 ```bash
 pip install canvalib
