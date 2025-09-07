@@ -38,12 +38,18 @@ COLOR: default to Fore.GREEN. If you want to change it import Fore from colorama
 #### Add text to your canvas:
 
 ```python
-c.add_text(x, y, text)
+c.add_text(x, y, text, color, background)
 ```
 
 X: row of the canvas where your text will be. Notice that it's starting from 0 index.
 
 Y: column of the canvas where your text will be. Notice that it's starting from 0 index.
+
+TEXT: whatever you want
+
+COLOR: default to self.color. Must be Fore.color or escape sequence that setting text color
+
+BACKGROUND: default to self.background. Must be Back.color or escape sequence that setting background color
 
 #### Render it:
 
